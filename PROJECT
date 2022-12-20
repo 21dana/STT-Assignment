@@ -1,0 +1,329 @@
+#!/bin/bash
+#This prject is done by Danayit Girma
+echo "Welcome to class schedule teller UI"
+echo "Enter username"
+read username
+echo "Enter password"
+read password
+if [[ $username == "guest" && $password == "guest" ]]
+then 
+	echo "Login successful, Do you want to start?"
+	read answer1
+	while [[ $answer1 == "yes" ]]
+	do
+		echo "Please enter the date all in lowercase: "
+		read date1
+		if [[ $date1 == "monday" ]]
+		then
+			echo "Morining (9:00 am)  Optimization theory"
+			echo "Afternoon  -------"
+			echo "Do you want to continue?"
+			read answer2
+			while [[ $answer2 == "yes" ]]
+			do
+				echo "Please enter the date or type q to exit: "
+				read date2
+				if [[ $date2 == "monday" ]]
+				then
+					echo "Morining (9:00 am)  Optimization theory"
+					echo "Afternoon  -------"
+				elif [[ $date2 == "tuesday" ]]
+				then
+					echo "No schedule found"
+				elif [[ $date2 == "wednsday" ]]
+				then
+					echo "Morning (9:00 am)  Software Tools and Techniques"
+					echo "Afternoon  -------"
+				elif [[ $date2 == "thursday" ]]
+				then
+					echo "Morning (8:30 am)  Data communication and computer networks" 
+					echo "Afternoon (7:30 pm)  Optimization theory"
+				elif [[ $date2 == "friday" ]]
+				then
+					echo "No schedule found"
+				elif [[ $date2 == "saturday" ]]
+				then
+					echo "Morning (9:00 am) Digital Communication"
+					 echo "Afternoon  -------"
+				elif [[ $date2 == "sunday" ]]
+				then
+					echo "No class, Happy sunday!"
+				elif [[ $date2 == "q" ]]
+				then
+				       echo "Thank you for using the service"
+				       exit 	
+				else
+					echo "You have entered invalid date, Please enter the day again!"
+				fi
+			done
+			break
+		elif [[ $date1 == "tuesday" ]]
+		then
+			echo "No schedule found"
+			echo "Do you want to continue?"
+			read answer2
+			while [[ $answer2 == "yes" ]]
+			do
+				echo -n "Please enter the date or type q to exit: "
+				read date2
+				if [[ $date2 == "monday" ]]
+				then
+				        echo "Morining (9:00 am)  Optimization theory"
+				        echo "Afternoon  -------"
+				elif [[ $date2 == "tuesday" ]]
+				then
+					echo "No schedule found" 
+				elif [[ $date2 == "wednsday" ]]
+				then
+					echo "Morning (9:00 am) Software Tools and Techniques"
+					echo "Afternoon  -------"
+				elif [[ $date2 == "thursday" ]]
+				then
+					echo "Morning (8:30 am)  Data communication and computer network"
+					echo "Afternoon (7:30 pm)  Optimization theory"
+				elif [[ $date2 == "friday" ]]
+				then
+					echo "No schedule found"
+				elif [[ $date2 == "saturday" ]]
+				then
+					echo "Morning (9:00 am) Digital communication"
+					echo "Afternoon  -------"
+				elif [[ $date2 == "sunday" ]]
+				then
+					echo "No class, Happy sunday"
+				elif [[ $date2 == "q" ]]
+				then
+					echo "Thank you for using the service"
+					exit
+				else
+					echo "You have entered invalid date, Please enter the day again!"
+				fi
+			done
+			break
+		elif [[ $date1 == "wednsday" ]]
+		then
+			echo "Morning (9:00 am)  Software Tools and Techniques"
+			echo "Afternoon  -------"
+		        echo "Do you want to continue?"
+			read answer2
+			while [[ $answer2 == "yes" ]]
+			do
+				echo -n "Please enter the date or type q to exit: "
+				read date2
+				if [[ $date2 == "monday" ]]
+				then
+					echo "Morning (9:30 am) Optimization theory"
+					echo "Afternoon  -------"
+				elif [[ $date2 == "tuesday" ]]
+				then
+					echo "No schedule found"
+				elif [[ $date2 == "wednsday" ]]
+				then
+					echo "Morning (9:00 am) Software Tools and Techniques"
+					echo "Afternoon  -------"
+				elif [[ $date2 == "thursday" ]]
+				then
+					 echo "Morning (8:30 am)  Data communication and computer network"
+					 echo "Afternoon (7:30 pm)  Optimization theory"
+				 elif [[ $date2 == "friday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "saturday" ]]
+				 then
+					 echo "Morning (9:00 am) Digital communication"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "sunday" ]]
+				 then
+					 echo "No class, Happy sunday"
+				 elif [[ $date2 == "q" ]]
+				 then
+					 echo "Thank you for using the service"
+					 exit
+				 else
+					 echo "You have entered invalid date, Please enter the day again!"
+				fi
+			done
+			break
+		elif [[ $date1 == "thursday" ]]
+		then
+			 echo "Morning (8:30 am)  Data communication and computer network"
+			 echo "Afternoon (7:30 pm)  Optimization theory"
+			 echo "Do you want to continue?"
+			 read answer2
+			 while [[ $answer2 == "yes" ]]
+			 do
+				 echo -n "Please enter the date or type q to exit: "
+				 read date2
+				 if [[ $date2 == "monday" ]]
+				 then
+					 echo "Morning (9:00 am ) Optimization theory"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "tuesday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "wednsday" ]]
+				 then
+					 echo "Morning (9:00 am) Software Tools and Techniques"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "thursday" ]]
+				 then
+					 echo "Morning (8:30 am)  Data communication and computer network"
+				         echo "Afternoon (7:30 pm)  Optimization theory"
+				 elif [[ $date2 == "friday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "saturday" ]]
+				 then
+					 echo "Morning (9:00 am) Digital communication"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "sunday" ]]
+				 then
+				         echo "No class, Happy sunday"
+				 elif [[ $date2 == "q" ]]
+				 then
+					 echo "Thank you for using the service"
+					 exit
+			         else
+			        	 echo "You have entered invalid date, Please enter the day again!"
+				 fi
+			 done
+			 break
+		 elif [[ $date1 == "friday" ]]
+		 then
+			 echo "No schedule found"
+			 echo "Do you want to continue?"
+			 read answer2
+			 while [[ $answer2 == "yes" ]]
+			 do
+				 echo -n "Please enter the date or type q to exit: "
+				 read date2
+				 if [[ $date2 == "monday" ]]
+				 then
+					 echo "Morning (9:00 am) Optimization theory"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "tuesday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "wednsday" ]]
+				 then
+					 echo "Morning (9:00 am) Software Tools and Techniques"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "thursday" ]]
+				 then
+					  echo "Morning (8:30 am)  Data communication and computer network"
+					  echo "Afternoon (7:30 pm)  Optimization theory"
+				 elif [[ $date2 == "friday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "saturday" ]]
+				 then
+					 echo "Morning (9:00 am) Digital communication"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "sunday" ]]
+				 then
+					 echo "No class, Happy sunday"
+				 elif [[ $date2 == "q" ]]
+				 then
+					 echo "Thank you for using the service"
+					 exit
+				 else 
+					 echo "You have entered invalid date, Please enter the day again!"
+				 fi
+			 done
+			 break
+		 elif [[ $date1 == "saturday" ]]
+		 then
+			 echo "Morning (9:00 am) Digital communication"
+			 echo "Afternoon  -------"
+			 echo "Do you want to continue?"
+			 read answer2
+			 while [[ $answer == "yes" ]]
+			 do
+				 echo -n "Please enter the date or type q to exit: "
+				 read date2
+				 if [[ $date2 == "monday" ]]
+				 then
+					 echo "Morning (9:00 am) Optimization theory"
+				 elif [[ $date2 == "tuesday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "wednsday" ]]
+				 then
+					 echo "Morning (9:00 am) Software Tools and Techniques"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "thursday" ]]
+				 then
+					 echo "Morning (8:30 am)  Data communication and computer network"
+					 echo "Afternoon (7:30 pm)  Optimization theory"
+				 elif [[ $date2 == "friday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "saturday" ]]
+				 then
+					 echo "Morning (9:00 am) Digital communication"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "sunday" ]]
+				 then
+					 echo "No class, Happy sunday"
+				 elif [[ $date2 == "q" ]]
+				 then
+					 echo "Thank you for using the service"
+					 exit
+				 else
+					 echo "You have entered invalid date, Please enter the day again!"
+				 fi
+			 done
+			 break
+		 elif [[ $date1 == "sunday" ]]
+		 then
+			 echo "No class, Happy sunday"
+			 echo "Do you want to continue?"
+			 read answer2
+			 while [[ $answer2 == "yes" ]]
+			 do
+				 echo -n "Please enter the date or type q to exit: "
+				 read date2
+				 if [[ $date2 == "monday" ]]
+				 then
+					 echo "Morning (9:00 am) Optimization theory"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "tuesday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "wednsday" ]]
+				 then
+					 echo "Morning (9:00 am) Software Tools and Techniques"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "thursday" ]]
+				 then
+					 echo "Morning (8:30 am)  Data communication and computer network"
+					 echo "Afternoon (7:30 pm)  Optimization theory"
+				 elif [[ $date2 == "friday" ]]
+				 then
+					 echo "No schedule found"
+				 elif [[ $date2 == "saturday" ]]
+				 then
+					 echo "Morning (9:00 am) Digital communication"
+					 echo "Afternoon  -------"
+				 elif [[ $date2 == "sunday" ]]
+				 then
+					 echo "No class, Happy sunday"
+				 elif [[ $date2 == "q" ]]
+				 then
+					 echo "Thank you for using the service"
+					 exit
+				 else
+					 echo "You have entered invalid date, Please enter the day again!"
+				 fi
+			 done
+			 break
+		 else
+			 echo "You have entered invalid date, Please enter the day again!"
+		fi
+	done
+	echo "Thank you for visiting the service"
+else
+	echo "Invalid credintial, try again!"
+fi
+
+
